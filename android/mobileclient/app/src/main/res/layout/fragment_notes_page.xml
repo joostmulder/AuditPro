@@ -1,0 +1,40 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:padding="20dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.auditpro.mobile_client.pages.NotesPage">
+	<com.auditpro.mobile_client.controls.CustomTextView
+		android:id="@+id/notesText"
+		android:text="@string/message_notes_internal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<com.auditpro.mobile_client.controls.CustomEditText
+		style="@style/customEdit"
+		android:id="@+id/notesEdit"
+		android:gravity="top"
+		android:inputType="textMultiLine"
+		android:background="@drawable/notes_background"
+		android:padding="8dp"
+		android:layout_weight="1"
+		android:layout_width="match_parent"
+		android:layout_height="0dp" />
+	<com.auditpro.mobile_client.controls.CustomTextView
+		android:id="@+id/storeText"
+		android:text="@string/message_notes_store"
+		android:layout_marginTop="16dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<com.auditpro.mobile_client.controls.CustomEditText
+		style="@style/customEdit"
+		android:id="@+id/storeEdit"
+		android:gravity="top"
+		android:inputType="textMultiLine"
+		android:background="@drawable/notes_background"
+		android:padding="8dp"
+		android:layout_weight="1"
+		android:layout_width="match_parent"
+		android:layout_height="0dp" />
+</LinearLayout>

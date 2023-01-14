@@ -1,0 +1,84 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="20dp"
+	tools:context="com.auditpro.mobile_client.pages.MainMenuPage">
+
+	<ImageView
+		android:contentDescription="@string/app_name"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:src="@drawable/auditprologo" />
+	<com.auditpro.mobile_client.controls.CustomButton
+		style="@style/customButton"
+		android:id="@+id/syncButton"
+		android:text="@string/button_main_sync"
+		android:layout_marginTop="30dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<com.auditpro.mobile_client.controls.CustomButton
+		style="@style/customButton"
+		android:id="@+id/auditButton"
+		android:text="@string/button_main_audit_new"
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<com.auditpro.mobile_client.controls.CustomButton
+		style="@style/customButton"
+		android:id="@+id/reviewButton"
+		android:text="@string/button_main_review"
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<com.auditpro.mobile_client.controls.CustomButton
+		style="@style/customButton"
+		android:id="@+id/logoutButton"
+		android:text="@string/button_main_logout"
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<com.auditpro.mobile_client.controls.CustomTextView
+		android:id="@+id/syncRequiredText"
+		style="@style/customText"
+		android:text="@string/message_main_recommend_sync"
+		android:layout_marginTop="16dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<View
+		android:layout_weight="1"
+		android:layout_width="match_parent"
+		android:layout_height="0dp" />
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<com.auditpro.mobile_client.controls.CustomTextView
+			android:id="@+id/versionText"
+			android:text="@string/app_version"
+			android:layout_alignParentStart="true"
+			android:layout_toStartOf="@id/helpButton"
+			android:layout_centerVertical="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<ImageButton
+			android:id="@+id/settingsButton"
+			android:src="@drawable/ic_settings"
+			android:contentDescription="@string/page_name_settings"
+			android:background="@android:color/transparent"
+			android:layout_toStartOf="@+id/helpButton"
+			android:layout_marginEnd="15dp"
+			android:layout_centerInParent="true"
+			android:alpha=".66"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<com.auditpro.mobile_client.controls.CustomButton
+			style="@style/helpButton"
+			android:id="@+id/helpButton"
+			android:text="@string/button_help"
+			android:layout_alignParentEnd="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</RelativeLayout>
+</LinearLayout>

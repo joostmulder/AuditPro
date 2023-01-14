@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 tools:context="com.auditpro.mobile_client.pages.ReviewPage">
+	<ListView
+		android:id="@+id/auditList"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+	<TextView
+		android:id="@+id/noAuditsText"
+		android:text="@string/message_review_no_audits"
+		android:visibility="gone"
+		android:textSize="24dp"
+		android:textStyle="bold"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:paddingBottom="96dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+</FrameLayout>

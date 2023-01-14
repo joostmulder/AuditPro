@@ -1,0 +1,226 @@
+<resources>
+	<string name="app_name">AuditPro</string>
+	<string name="app_version">Version %s</string>
+
+	<string name="action_barcode_battery">Barcode Battery</string>
+	<string name="action_barcode_status">Barcode Status</string>
+	<string name="action_set_unscanned">Set Unscanned Items…</string>
+	<string name="action_store_history">Store History</string>
+	<string name="action_sync_all">Sync All</string>
+
+	<string name="title_error">Error</string>
+
+	<string name="button_cancel">Cancel</string>
+	<string name="button_help">Help</string>
+	<string name="button_go_back">Go Back</string>
+	<string name="button_info">Info</string>
+	<string name="button_login">Login</string>
+	<string name="button_no">No</string>
+	<string name="button_ok">OK</string>
+	<string name="button_save_anyway">Save Anyway</string>
+	<string name="button_sync">Sync</string>
+	<string name="button_toggle_all">Toggle All</string>
+	<string name="button_wait">Wait</string>
+	<string name="button_yes">Yes</string>
+
+	<string name="button_login_save_password">Save Password</string>
+
+	<string name="button_main_audit_confirm_continue">Continue This Audit</string>
+	<string name="button_main_audit_confirm_end_old">End This Audit And Start A New One</string>
+	<string name="button_main_sync">Sync to Server</string>
+	<string name="button_main_sync_count">Sync to Server (%d Audits)</string>
+	<string name="button_main_sync_count_one">Sync to Server (1 Audit)</string>
+	<string name="button_main_audit_new">Audit Store</string>
+	<string name="button_main_audit_continue">Continue Audit</string>
+	<string name="button_main_logout">Log Out</string>
+	<string name="button_main_review">Review</string>
+
+	<string name="button_stores_all_chains">All Chains</string>
+	<string name="button_stores_gps">GPS</string>
+	<string name="button_stores_last_store">Last Store</string>
+	<string name="button_stores_name">Name</string>
+	<string name="button_stores_audit">Audit This Store</string>
+
+	<string name="button_prods_notes">Notes</string>
+	<string name="button_prods_filter_some">Filter %s</string>
+	<string name="button_prods_filter_all">Filter All</string>
+	<string name="button_prods_filter_reorder_status">Filter Status</string>
+	<string name="button_prods_filter_product_type">Filter Type</string>
+	<string name="button_prods_filter_multi">Filter Status, Type</string>
+	<string name="button_prods_complete_audit">Complete Audit</string>
+	<string name="button_prods_brand_all">All Brands</string>
+	<string name="button_prods_brand_filter">Filter Brands</string>
+
+	<string name="button_filter_none">None</string>
+	<string name="button_filter_in_stock">In Stock</string>
+	<string name="button_filter_out_of_stock">Out of Stock</string>
+	<string name="button_filter_void">Void</string>
+
+	<string name="button_updateprod_back">Back to Product List</string>
+	<string name="button_updateprod_sku_conditions">SKU Conditions (%d)</string>
+
+	<string name="button_complete_print">Print Reorder Report</string>
+	<string name="button_complete_close">Close Out Audit</string>
+	<string name="button_complete_without_gps">Close Without GPS</string>
+
+	<string name="hint_email">E-mail</string>
+	<string name="hint_password">Password</string>
+	<string name="hint_search_text">Search Text</string>
+
+	<string name="page_name_help">Help</string>
+	<string name="page_name_select_store">Audit Store</string>
+	<string name="page_name_review">Review Closed Audits</string>
+	<string name="page_name_settings">Settings</string>
+
+	<string name="battery_device_scanner">Scanner</string>
+	<string name="battery_device_printer">Printer</string>
+	<string name="battery_state_none">No %s Battery Information</string>
+	<string name="battery_state_unknown">Unknown %s Battery State</string>
+	<string name="battery_state_full">Full Charge on %s Battery</string>
+	<string name="battery_state_pct">%s Battery at %d%%</string>
+
+	<string name="message_brand_title">Select Brands</string>
+
+	<string name="message_confirm_logout">This will log you out of the application.  Are you sure you want to do this?</string>
+	<string name="message_confirm_sync">Would you like to sync now?  You may be using your personal data plan.</string>
+	<string name="message_login_incorrect">Your e-mail or password is not correct.</string>
+	<string name="message_login_inet_first">Please connect to the Internet to log in for the first time.</string>
+	<string name="message_login_inet_req">Please connect to the Internet to log in.</string>
+	<string name="message_main_audit_confirm">An audit of %s was started on %s.</string>
+	<string name="message_main_needs_sync">Please synchronize now to load stores that can be audited.</string>
+	<string name="message_sync_needs_inet">Please connect to the Internet before syncing.</string>
+	<string name="message_main_recommend_sync">AuditPro has been updated since the last sync &#8212; please sync again as soon as possible.</string>
+
+	<string name="message_stores_no_chains">There are no chains in our cache, please sync now.</string>
+	<string name="message_stores_no_last">There is no last store recorded.</string>
+	<string name="message_stores_no_gps">GPS coordinates not available.</string>
+	<string name="message_stores_sort_by">Sort Stores By:</string>
+	<string name="message_stores_select_chain">Select Chain</string>
+	<string name="message_stores_begin_audit_title">Begin Audit</string>
+	<string name="message_stores_placeholder_info">Placeholder store information</string>
+
+	<string name="begin_audit_last">Last Audit %d Days Ago</string>
+	<string name="begin_audit_percent">%d%%</string>
+	<string name="begin_audit_time">Audit Time: %s</string>
+	<string name="begin_audit_no_store">Internal error unable to read store info.</string>
+
+	<string name="message_prods_title">Products</string>
+	<string name="message_prods_exit_title">Exit Audit</string>
+	<string name="message_prods_exit_message">Are you sure you want to exit this audit without completing it? You can resume this audit at a later time, but you cannot start a new one until this one is completed.</string>
+	<string name="message_prods_invalid_reorder_status">Internal error, unable to translate reorder status name</string>
+	<string name="message_prods_not_found">Internal error, unable to find the product</string>
+	<string name="message_prods_search_clear_descr">Clear search filter</string>
+	<string name="message_prods_barcode_not_found">Record for UPC %s Not Found</string>
+	<string name="message_prods_set_unscanned_prompt">What status would you like to set unscanned items?</string>
+	<string name="message_prods_set_unscanned_updated">Unscanned products status set.</string>
+	<string name="message_prods_set_unscanned_none">No unscanned products were found to set.</string>
+	<string name="message_prods_info_placeholder">Placeholder product information</string>
+	<string name="emssage_prods_store_not_found">Internal error, unable to retrieve store history.</string>
+
+	<string name="message_notes_title">Notes</string>
+	<string name="message_notes_internal">Internal Notes</string>
+	<string name="message_notes_store">Store Notes (To Share With Store Manager)</string>
+
+	<string name="message_filter_title">Select Filters</string>
+	<string name="message_filter_reorder_status">Reorder Status</string>
+	<string name="message_filter_product_types">Product Types</string>
+
+	<string name="message_updateprod_title">Scan Product</string>
+	<string name="message_updateprod_label_retail_price">Retail Price $</string>
+	<string name="message_updateprod_label_sale_price">Sale Price $</string>
+	<string name="message_updateprod_label_reorder_status">Reorder Status:</string>
+	<string name="message_updateprod_label_reorder_code">Reorder Code:</string>
+	<string name="message_updateprod_label_sku">SKU:</string>
+	<string name="message_updateprod_enter_valid_for">Enter a valid amount for</string>
+	<string name="message_updateprod_descr_retail_price">Retail Price</string>
+	<string name="message_updateprod_descr_sale_price">Sale Price</string>
+	<string name="message_updateprod_in_stock_range">The prices for in stock items should be between %s and %s. Are you sure you want to save prices outside this range?</string>
+	<string name="message_updateprod_in_stock_min">The prices for in stock items should be at least %s. Are you sure you want to save prices outside this range?</string>
+	<string name="message_updateprod_in_stock_max">The prices for in stock items should be not more than %s. Are you sure you want to save prices outside this range?</string>
+
+	<string name="message_reorder_status_title">Reorder Status</string>
+	<string name="message_reorder_status_message">Select a reorder status.</string>
+
+	<string name="message_info_title">Product Info</string>
+	<string name="message_info_not_specified">(Not Specified)</string>
+	<string name="message_info_not_spec_short">(NS)</string>
+	<string name="message_info_contents">(Demo Contents)</string>
+	<string name="message_info_contents_short">(DC)</string>
+	<string name="message_info_label_brand_name">Brand Name:</string>
+	<string name="message_info_label_price_msrp">Price MSRP:</string>
+	<string name="message_info_label_average">Average:</string>
+	<string name="message_info_label_min">Min:</string>
+	<string name="message_info_label_max">Max:</string>
+	<string name="message_info_label_weighed">Weighed:</string>
+	<string name="message_info_label_upc">UPC Code:</string>
+	<string name="message_info_label_sku">Brand SKU:</string>
+	<string name="message_info_label_reorder_code">Reorder Code:</string>
+	<string name="message_info_label_category">Category:</string>
+	<string name="message_info_label_subcategory">Subcategory:</string>
+	<string name="message_info_label_product_type">Product Type:</string>
+
+	<string name="message_skuconditions_title">Select SKU Conditions</string>
+
+	<string name="message_complete_title">Complete Audit</string>
+	<string name="message_complete_gps_received">GPS Position Received</string>
+	<string name="message_complete_gps_confirm_title">No GPS Position</string>
+	<string name="message_complete_gps_confirm_message">We have not received a GPS position for the audit completion.  Would you like to wait, or send without GPS?</string>
+	<string name="message_complete_no_notes_title">No Notes</string>
+	<string name="message_complete_no_notes_confirm">You have not entered any notes for this audit. Are you sure you want to end the audit without notes?</string>
+	<string name="message_complete_no_notes_close_without">Close Without Notes</string>
+	<string name="message_complete_no_notes_enter_notes">Enter Notes</string>
+	<string name="message_complete_no_notes_continue_audit">Continue Audit To Add Notes</string>
+	<string name="message_complete_add_notes_button">Add Notes</string>
+	<string name="message_complete_edit_notes_button">Edit Notes</string>
+	<string name="message_complete_printer_battery">Printer Battery Level</string>
+
+	<string name="message_review_confirm_remove">Are you certain you want to remove the audit %s? It will be permanently deleted from your phone.</string>
+	<string name="message_review_confirm_sync">Are you certain you want to sync the audit %s?  On success the audit will be removed from your phone.</string>
+	<string name="message_review_error_attachment">Failed to create audit e-mail attachment.  Make sure you have enough free memory on your phone. If you have a removable memory card, make sure the card is inserted.</string>
+	<string name="message_review_error_email">Make sure you have an e-mail client installed and configured on your phone.</string>
+	<string name="message_review_error_remove">Failed to remove audit, please contact customer support.</string>
+	<string name="message_review_error_serialize">Failed to format audit attachment, please contact customer support.</string>
+	<string name="message_review_error_encoding">Error encoding audit attachment, please contact customer support.</string>
+	<string name="message_review_no_audits">There are no closed audits to review.</string>
+	<string name="message_review_opt_sync">Sync</string>
+	<string name="message_review_opt_email">E-mail</string>
+	<string name="message_review_opt_edit">Edit</string>
+	<string name="message_review_opt_remove">Remove</string>
+	<string name="message_review_error_edit_started">An audit is already in process. Complete the current audit from the main menu, then edit this one.</string>
+	<string name="message_review_sync_title">Sync All</string>
+	<string name="message_review_sync_confirm">Are you sure you want to sync all of the completed audits? Synced audits will be removed from yor phone.</string>
+	<string name="message_review_sync_confirm_cell">Are you sure you want to sync all of the completed audits? Synced audits will be removed from yor phone. Cellular data may be used.</string>
+
+	<string name="print_receipt_no_bluetooth">No Bluetooth adapter is available on this device, or we don\'t have permission to access Bluetooth.</string>
+	<string name="print_receipt_permission">The Bluetooth adapter must be turned on for your phone. Would you like to do this now?</string>
+	<string name="print_receipt_no_printer">Bluetooth printer not found. Please be sure to pair your printer with your phone.</string>
+	<string name="print_receipt_io_error">Error sending report to printer, please check the printer and the Bluetooth connection.</string>
+	<string name="print_receipt_interrupted">Unexpected interription to the printer process, please try again.</string>
+	<string name="print_receipt_success">Report Sent To Printer</string>
+	<string name="print_receipt_permission_title">Permission Required</string>
+	<string name="print_battery_io_error">Error requesting battery charge from printer, please check the printer and Bluetooth connection.</string>
+	<string name="print_battery_parse_error">Unexpected response from printer for battery charge.</string>
+	<string name="print_battery_interrupted_error">Unexpected interruption reading printer battery status.</string>
+	<string name="print_battery_timeout_error">Timeout waiting for battery status from printer.</string>
+
+	<string name="settings_autosync_wifi">Auto sync on login when WiFi is connected</string>
+	<string name="settings_auto_decimal">Automatically enter decimal numbers</string>
+
+	<string name="placeholder">Placeholder Text</string>
+
+	<!-- Old demo strings -->
+	<string name="action_settings">Settings</string>
+
+	<string name="button_find_device">Find Device</string>
+	<string name="button_short_receipt">Short Receipt</string>
+	<string name="button_long_receipt">Long Receipt</string>
+
+	<string name="error_no_bt_adapter">No Bluetooth Adapter Available</string>
+
+	<string name="msg_find_complete">Find device complete</string>
+	<string name="msg_find_no_printer">Find device complete, no printer found</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

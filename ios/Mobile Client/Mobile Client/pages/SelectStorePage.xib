@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectStorePage" customModule="Mobile_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="chainButton" destination="2Vf-DG-OYX" id="VAE-WG-La9"/>
+                <outlet property="gpsButton" destination="kZu-yL-Ahg" id="D8X-NS-6oV"/>
+                <outlet property="lastStoreButton" destination="J29-G9-QQJ" id="cjm-8A-dEo"/>
+                <outlet property="nameButton" destination="B6G-Gd-oLc" id="LFm-3R-OVx"/>
+                <outlet property="searchEdit" destination="3YO-eP-uVx" id="boV-Oz-kFE"/>
+                <outlet property="storeList" destination="6WU-52-Xqs" id="dWm-TF-Y9v"/>
+                <outlet property="view" destination="iN0-l3-epB" id="im5-gL-nRZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vf-DG-OYX" userLabel="Chain Button" customClass="CustomButton" customModule="Mobile_Client" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wod-8L-mWH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                    <state key="normal" title="ALL CHAINS">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onChain" destination="-1" eventType="touchUpInside" id="fSW-0q-imz"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6WU-52-Xqs">
+                    <rect key="frame" x="0.0" y="76" width="375" height="520"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3CU-q5-d8g"/>
+                        <outlet property="delegate" destination="-1" id="S9Y-6g-WvV"/>
+                    </connections>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="69L-O3-8nP">
+                    <rect key="frame" x="0.0" y="638" width="375" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZu-yL-Ahg" customClass="HelpButton" customModule="Mobile_Client" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="119.5" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Kx0-j6-yHV"/>
+                            </constraints>
+                            <state key="normal" title="GPS"/>
+                            <connections>
+                                <action selector="onGps" destination="-1" eventType="touchUpInside" id="tdG-aN-9vN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J29-G9-QQJ" customClass="HelpButton" customModule="Mobile_Client" customModuleProvider="target">
+                            <rect key="frame" x="127.5" y="0.0" width="120" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="dFR-x6-yTy"/>
+                            </constraints>
+                            <state key="normal" title="LAST STORE"/>
+                            <connections>
+                                <action selector="onLastStore" destination="-1" eventType="touchUpInside" id="Ol3-Rj-QE0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6G-Gd-oLc" customClass="HelpButton" customModule="Mobile_Client" customModuleProvider="target">
+                            <rect key="frame" x="255.5" y="0.0" width="119.5" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="0Rk-lV-HRx"/>
+                            </constraints>
+                            <state key="normal" title="NAME"/>
+                            <connections>
+                                <action selector="onName" destination="-1" eventType="touchUpInside" id="Gbg-by-qci"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort stores by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kB-wG-ykr">
+                    <rect key="frame" x="0.0" y="609" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="MEK-gp-lBp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Stores" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3YO-eP-uVx">
+                    <rect key="frame" x="0.0" y="38" width="375" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="onSearchChanged" destination="-1" eventType="editingChanged" id="fsK-Lx-EUV"/>
+                        <outlet property="delegate" destination="-1" id="eDn-8L-ySG"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="69L-O3-8nP" secondAttribute="bottom" id="5HQ-a3-4zp"/>
+                <constraint firstItem="5kB-wG-ykr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="64K-Xf-5d7"/>
+                <constraint firstItem="3YO-eP-uVx" firstAttribute="top" secondItem="2Vf-DG-OYX" secondAttribute="bottom" constant="8" id="8wP-id-flD"/>
+                <constraint firstItem="2Vf-DG-OYX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Y3-4n-bbj"/>
+                <constraint firstItem="6WU-52-Xqs" firstAttribute="top" secondItem="3YO-eP-uVx" secondAttribute="bottom" constant="8" id="Huz-7g-b0z"/>
+                <constraint firstItem="3YO-eP-uVx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KMC-oD-Fdp"/>
+                <constraint firstItem="69L-O3-8nP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LUe-hr-LzG"/>
+                <constraint firstItem="5kB-wG-ykr" firstAttribute="top" secondItem="6WU-52-Xqs" secondAttribute="bottom" constant="13" id="MnC-of-FbB"/>
+                <constraint firstAttribute="trailing" secondItem="3YO-eP-uVx" secondAttribute="trailing" id="TLn-OS-SvV"/>
+                <constraint firstAttribute="trailing" secondItem="2Vf-DG-OYX" secondAttribute="trailing" id="Ti5-tk-Ve5"/>
+                <constraint firstItem="6WU-52-Xqs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YAK-n9-zjI"/>
+                <constraint firstAttribute="trailing" secondItem="6WU-52-Xqs" secondAttribute="trailing" id="ZcJ-uY-VQb"/>
+                <constraint firstAttribute="trailing" secondItem="69L-O3-8nP" secondAttribute="trailing" id="ayC-tS-atj"/>
+                <constraint firstItem="69L-O3-8nP" firstAttribute="top" secondItem="5kB-wG-ykr" secondAttribute="bottom" constant="8" id="esP-6i-cnT"/>
+                <constraint firstAttribute="trailing" secondItem="5kB-wG-ykr" secondAttribute="trailing" id="soT-jP-xTk"/>
+                <constraint firstItem="2Vf-DG-OYX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wod-Fa-dNF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="25.5" y="51"/>
+        </view>
+    </objects>
+</document>

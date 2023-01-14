@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  tools:context="com.auditpro.mobile_client.MainActivity">
+	<item
+		android:id="@+id/action_barcode_battery"
+		android:title="@string/action_barcode_battery"
+		android:icon="@drawable/baseline_battery_full_white_24dp"
+		android:visible="false"
+		app:showAsAction="always"
+		tools:ignore="AlwaysShowAction" />
+	<item
+		android:id="@+id/action_barcode_status"
+		android:title="@string/action_barcode_status"
+		android:icon="@drawable/ic_barcode_scan_online"
+		app:showAsAction="always"
+		tools:ignore="AlwaysShowAction"/>
+	<item
+		android:id="@+id/action_store_history"
+		android:orderInCategory="100"
+		android:title="@string/action_store_history"
+		app:showAsAction="never" />
+	<item
+		android:id="@+id/action_set_unscanned"
+		android:orderInCategory="101"
+		android:title="@string/action_set_unscanned"
+		app:showAsAction="never" />
+</menu>

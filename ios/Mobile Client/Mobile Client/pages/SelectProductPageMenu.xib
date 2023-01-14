@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="fEz-cV-KxP">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eut-1c-8gJ" userLabel="Main Menu Button">
+                    <rect key="frame" x="112" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ytm-B8-ySP"/>
+                        <constraint firstAttribute="width" constant="40" id="bBr-fp-h4m"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" backgroundImage="ic_menu_white"/>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWl-IS-BAh" userLabel="Barcode Scanner Button">
+                    <rect key="frame" x="56" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="fKk-Og-0vK"/>
+                        <constraint firstAttribute="width" constant="40" id="lvf-dE-ROB"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ic_barcode_scan_offline"/>
+                </button>
+                <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWO-Qq-19t" userLabel="Barcode Battery Button">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jpZ-on-Ctj"/>
+                        <constraint firstAttribute="width" constant="40" id="rlI-Zz-ebc"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="baseline_battery_unknown_black_24pt"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Eut-1c-8gJ" firstAttribute="leading" secondItem="hWl-IS-BAh" secondAttribute="trailing" constant="16" id="Sip-nZ-wrS"/>
+                <constraint firstItem="Eut-1c-8gJ" firstAttribute="centerY" secondItem="fEz-cV-KxP" secondAttribute="centerY" id="WTd-h1-w7C"/>
+                <constraint firstItem="hWl-IS-BAh" firstAttribute="centerY" secondItem="fEz-cV-KxP" secondAttribute="centerY" id="cJV-HM-8jd"/>
+                <constraint firstItem="hWl-IS-BAh" firstAttribute="leading" secondItem="TWO-Qq-19t" secondAttribute="trailing" constant="16" id="i7a-X4-yda"/>
+                <constraint firstItem="SuL-Vp-9Du" firstAttribute="trailing" secondItem="Eut-1c-8gJ" secondAttribute="trailing" id="jQS-Kd-mGF"/>
+                <constraint firstItem="TWO-Qq-19t" firstAttribute="centerY" secondItem="fEz-cV-KxP" secondAttribute="centerY" id="t5H-8U-iU0"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="SuL-Vp-9Du"/>
+            <point key="canvasLocation" x="-421" y="-480"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baseline_battery_unknown_black_24pt" width="24" height="24"/>
+        <image name="ic_barcode_scan_offline" width="27" height="27"/>
+        <image name="ic_menu_white" width="27" height="27"/>
+    </resources>
+</document>

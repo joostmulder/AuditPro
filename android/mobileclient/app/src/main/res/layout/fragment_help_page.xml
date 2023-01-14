@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 android:paddingLeft="20dp"
+			 android:paddingRight="20dp"
+			 android:paddingBottom="20dp"
+			 android:background="#FFF"
+			 tools:context="com.auditpro.mobile_client.pages.HelpPage">
+	<WebView
+		android:id="@+id/webView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+</FrameLayout>

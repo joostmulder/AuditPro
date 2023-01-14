@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="10dp"
+	android:orientation="vertical"
+	tools:context="com.auditpro.mobile_client.MainActivity"
+	tools:showIn="@layout/activity_main">
+
+	<LinearLayout
+		android:id="@+id/printButtons"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/findButton"
+			android:text="@string/button_find_device"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<Button
+			android:id="@+id/shortButton"
+			android:text="@string/button_short_receipt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<Button
+			android:id="@+id/longButton"
+			android:text="@string/button_long_receipt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<GridLayout
+		android:columnCount="2"
+		android:rowCount="4"
+		android:useDefaultMargins="true"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:text="Grabba State:"
+			tools:ignore="HardcodedText"/>
+		<TextView
+			android:id="@+id/grabbaState"
+			android:text="(Not Initialized)"
+			tools:ignore="HardcodedText"/>
+		<TextView
+			android:text="Last Barcode:"
+			tools:ignore="HardcodedText"/>
+		<TextView
+			android:id="@+id/grabbaBarcode"
+			android:text="(None)"
+			tools:ignore="HardcodedText"/>
+		<TextView
+			android:text="Last Event:"
+			tools:ignore="HardcodedText"/>
+		<TextView
+			android:id="@+id/grabbaEvent"
+			android:text="(None)"
+			tools:ignore="HardcodedText"/>
+		<TextView
+			android:text="Last Error:"
+			tools:ignore="HardcodedText"/>
+		<TextView
+			android:id="@+id/grabbaError"
+			android:text="(None)"
+			tools:ignore="HardcodedText"/>
+	</GridLayout>
+
+</LinearLayout>

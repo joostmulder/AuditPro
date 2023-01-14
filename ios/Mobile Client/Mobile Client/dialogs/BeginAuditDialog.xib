@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hero.otf">
+            <string>Hero</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeginAuditDialog" customModule="Mobile_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="auditButton" destination="C3e-3v-Grq" id="E4z-jz-kJl"/>
+                <outlet property="cancelButton" destination="Ybn-m6-13B" id="Hlg-cC-UfW"/>
+                <outlet property="chainLabel" destination="Q1x-St-0Z6" id="Cky-bh-0gc"/>
+                <outlet property="cityLabel" destination="ewO-rh-Z62" id="3Vx-Y2-dC9"/>
+                <outlet property="historyTable" destination="oKR-GD-Wrb" id="RxP-UL-f6f"/>
+                <outlet property="storeLabel" destination="AeQ-tt-9f4" id="k3o-r1-c1w"/>
+                <outlet property="streetLabel" destination="nKi-JZ-Auu" id="4L3-wE-82x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiF-fL-UDQ">
+                    <rect key="frame" x="40" y="44" width="295" height="579"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin Audit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtX-Ph-TMe">
+                            <rect key="frame" x="16" y="16" width="123" height="22"/>
+                            <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ORE-uG-TgJ">
+                            <rect key="frame" x="16" y="54" width="263" height="92"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chain Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1x-St-0Z6">
+                                    <rect key="frame" x="0.0" y="0.0" width="103" height="17"/>
+                                    <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeQ-tt-9f4">
+                                    <rect key="frame" x="0.0" y="25" width="99.5" height="17"/>
+                                    <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKi-JZ-Auu">
+                                    <rect key="frame" x="0.0" y="50" width="122" height="17"/>
+                                    <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Zip" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewO-rh-Z62">
+                                    <rect key="frame" x="0.0" y="75" width="60" height="17"/>
+                                    <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oNT-aR-fqt">
+                            <rect key="frame" x="49.5" y="533" width="196" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybn-m6-13B" customClass="CustomButton" customModule="Mobile_Client" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                    <state key="normal" title="CANCEL"/>
+                                    <connections>
+                                        <action selector="onCancel" destination="-1" eventType="touchUpInside" id="vZE-lz-5Fo"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3e-3v-Grq" customClass="CustomButton" customModule="Mobile_Client" customModuleProvider="target">
+                                    <rect key="frame" x="83" y="0.0" width="113" height="30"/>
+                                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                    <state key="normal" title="AUDIT STORE"/>
+                                    <connections>
+                                        <action selector="onAudit" destination="-1" eventType="touchUpInside" id="Y4u-bs-QRY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="8hn-pL-GQv"/>
+                            </constraints>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oKR-GD-Wrb">
+                            <rect key="frame" x="0.0" y="162" width="295" height="355"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="rcL-rl-goa"/>
+                                <outlet property="delegate" destination="-1" id="ud1-dd-epV"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PtX-Ph-TMe" firstAttribute="leading" secondItem="uiF-fL-UDQ" secondAttribute="leading" constant="16" id="CkH-HI-ac0"/>
+                        <constraint firstItem="oNT-aR-fqt" firstAttribute="top" secondItem="oKR-GD-Wrb" secondAttribute="bottom" constant="16" id="DR1-eP-TZ5"/>
+                        <constraint firstAttribute="bottom" secondItem="oNT-aR-fqt" secondAttribute="bottom" constant="16" id="HlJ-r1-hRp"/>
+                        <constraint firstAttribute="trailing" secondItem="ORE-uG-TgJ" secondAttribute="trailing" constant="16" id="VeR-Vf-jQ1"/>
+                        <constraint firstItem="oKR-GD-Wrb" firstAttribute="leading" secondItem="uiF-fL-UDQ" secondAttribute="leading" id="WFP-o9-alT"/>
+                        <constraint firstItem="oKR-GD-Wrb" firstAttribute="top" secondItem="ORE-uG-TgJ" secondAttribute="bottom" constant="16" id="dud-ID-57u"/>
+                        <constraint firstAttribute="trailing" secondItem="oKR-GD-Wrb" secondAttribute="trailing" id="fg9-gB-8fT"/>
+                        <constraint firstItem="ORE-uG-TgJ" firstAttribute="top" secondItem="PtX-Ph-TMe" secondAttribute="bottom" constant="16" id="hef-fJ-L2U"/>
+                        <constraint firstItem="PtX-Ph-TMe" firstAttribute="top" secondItem="uiF-fL-UDQ" secondAttribute="top" constant="16" id="q9d-5g-uey"/>
+                        <constraint firstItem="ORE-uG-TgJ" firstAttribute="leading" secondItem="uiF-fL-UDQ" secondAttribute="leading" constant="16" id="vgQ-1b-m0Y"/>
+                        <constraint firstItem="oNT-aR-fqt" firstAttribute="centerX" secondItem="uiF-fL-UDQ" secondAttribute="centerX" id="x0g-os-1BK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.32761665239726029" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uiF-fL-UDQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="4Fx-Ni-l9G"/>
+                <constraint firstItem="uiF-fL-UDQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="KOB-GO-ib5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uiF-fL-UDQ" secondAttribute="bottom" constant="44" id="d0j-O6-8hl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uiF-fL-UDQ" secondAttribute="trailing" constant="40" id="qH3-GV-6NV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

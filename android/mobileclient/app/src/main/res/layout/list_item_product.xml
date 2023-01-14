@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<com.auditpro.mobile_client.controls.CustomTextView
+		style="@style/customText"
+		android:id="@+id/productText"
+		android:text="@string/message_prods_info_placeholder"
+		android:layout_gravity="start|center_vertical"
+		android:layout_weight="1"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"/>
+	<com.auditpro.mobile_client.controls.PriceButton
+		style="@style/statusButton"
+		android:id="@+id/itemReorderStatusButton"
+		android:text="I $3.99"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_width="70dp"
+		android:layout_height="45dp" />
+	<!-- TODO layout_height to wrap_content after we fix control? -->
+</LinearLayout>

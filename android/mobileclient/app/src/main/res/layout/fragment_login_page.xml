@@ -1,0 +1,82 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="20dp"
+	tools:context="com.auditpro.mobile_client.pages.LoginPage">
+
+	<ImageView
+		android:contentDescription="@string/app_name"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:src="@drawable/auditprologo"
+		/>
+	<com.auditpro.mobile_client.controls.CustomEditText
+		style="@style/customEdit"
+		android:id="@+id/emailText"
+		android:hint="@string/hint_email"
+		android:imeOptions="actionNext"
+		android:maxLines="1"
+		android:lines="1"
+		android:inputType="textEmailAddress"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<com.auditpro.mobile_client.controls.CustomEditText
+		style="@style/customEdit"
+		android:id="@+id/passwordText"
+		android:inputType="textPassword"
+		android:imeOptions="actionDone"
+		android:maxLines="1"
+		android:lines="1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="@string/hint_password"/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<CheckBox
+			android:id="@+id/savePasswordCheck"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<com.auditpro.mobile_client.controls.CustomTextView
+			android:text="@string/button_login_save_password"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<com.auditpro.mobile_client.controls.CustomButton
+		style="@style/customButton"
+		android:id="@+id/loginButton"
+		android:text="@string/button_login"
+		android:imeOptions="actionDone"
+		android:layout_marginTop="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1" />
+	<RelativeLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<com.auditpro.mobile_client.controls.CustomTextView
+			android:id="@+id/versionText"
+			android:text="@string/app_version"
+			android:layout_alignParentStart="true"
+			android:layout_toStartOf="@id/helpButton"
+			android:layout_centerVertical="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<com.auditpro.mobile_client.controls.CustomButton
+			style="@style/helpButton"
+			android:layout_alignParentEnd="true"
+			android:id="@+id/helpButton"
+			android:text="@string/button_help"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:layout_width="match_parent"
+	android:layout_height="40dp">
+	<com.auditpro.mobile_client.controls.CustomTextView
+		style="@style/customText"
+		android:id="@+id/storeText"
+		android:text="@string/message_stores_placeholder_info"
+		android:layout_gravity="start|center_vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+</FrameLayout>

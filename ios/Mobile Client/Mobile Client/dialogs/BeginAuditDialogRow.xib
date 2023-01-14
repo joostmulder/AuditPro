@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hero.otf">
+            <string>Hero</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="history" rowHeight="137" id="ySU-Ln-5Cj">
+            <rect key="frame" x="0.0" y="0.0" width="597" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ySU-Ln-5Cj" id="YcI-Bs-IlD">
+                <rect key="frame" x="0.0" y="0.0" width="597" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" tag="100" contentMode="scaleToFill" verticalCompressionResistancePriority="999" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IRN-mj-oIl">
+                        <rect key="frame" x="16" y="11" width="505" height="113"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Audit %d Days Ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvK-mo-W0L">
+                                <rect key="frame" x="0.0" y="0.0" width="191.5" height="17"/>
+                                <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="auditor@auditcompany.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfj-7G-ZtY">
+                                <rect key="frame" x="0.0" y="25" width="231" height="17"/>
+                                <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit Time: 13:13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyS-95-5DL">
+                                <rect key="frame" x="0.0" y="50" width="130" height="17"/>
+                                <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit Note..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HI-Sl-Tfv">
+                                <rect key="frame" x="0.0" y="75" width="82.5" height="15"/>
+                                <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Note..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xS-Si-WnM">
+                                <rect key="frame" x="0.0" y="98" width="83" height="15"/>
+                                <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShZ-0e-M4e" customClass="CustomPercent" customModule="Mobile_Client" customModuleProvider="target">
+                        <rect key="frame" x="537" y="11" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="RHF-Np-VAV"/>
+                            <constraint firstAttribute="width" constant="40" id="zkV-CW-pRE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ShZ-0e-M4e" firstAttribute="top" secondItem="YcI-Bs-IlD" secondAttribute="topMargin" id="077-jz-Fdv"/>
+                    <constraint firstItem="ShZ-0e-M4e" firstAttribute="trailing" secondItem="YcI-Bs-IlD" secondAttribute="trailingMargin" id="Gpx-5k-JWS"/>
+                    <constraint firstItem="IRN-mj-oIl" firstAttribute="leading" secondItem="YcI-Bs-IlD" secondAttribute="leading" constant="16" id="U4V-tY-QKf"/>
+                    <constraint firstItem="IRN-mj-oIl" firstAttribute="top" secondItem="YcI-Bs-IlD" secondAttribute="top" constant="11" id="l4g-Ry-gGw"/>
+                    <constraint firstItem="ShZ-0e-M4e" firstAttribute="leading" secondItem="IRN-mj-oIl" secondAttribute="trailing" constant="16" id="zVc-tG-hNt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="41.5" y="-36.5"/>
+        </tableViewCell>
+    </objects>
+</document>

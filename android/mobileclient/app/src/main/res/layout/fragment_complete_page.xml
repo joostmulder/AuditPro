@@ -1,0 +1,53 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:padding="20dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.auditpro.mobile_client.pages.CompletePage">
+
+	<com.auditpro.mobile_client.controls.CustomTextView
+		style="@style/customText"
+		android:id="@+id/auditNameText"
+		android:gravity="center"
+		android:paddingBottom="60dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder" />
+	<com.auditpro.mobile_client.controls.CustomButton
+		style="@style/customButton"
+		android:id="@+id/printButton"
+		android:text="@string/button_complete_print"
+		android:layout_below="@id/auditNameText"
+		android:layout_toStartOf="@id/printBattery"
+		android:layout_marginBottom="40dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<com.auditpro.mobile_client.controls.CustomButton
+		style="@style/customButton"
+		android:id="@+id/notesButton"
+		android:text="@string/message_complete_edit_notes_button"
+		android:layout_below="@id/printButton"
+		android:layout_marginBottom="40dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<com.auditpro.mobile_client.controls.CustomButton
+		style="@style/customButton"
+		android:id="@+id/closeButton"
+		android:text="@string/button_complete_close"
+		android:layout_below="@id/notesButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<ImageButton
+		android:id="@+id/printBattery"
+		android:src="@drawable/baseline_battery_unknown_white_24dp"
+		android:tint="#222"
+		android:contentDescription="@string/message_complete_printer_battery"
+		android:background="@android:color/transparent"
+		android:alpha=".66"
+		android:layout_alignParentEnd="true"
+		android:layout_alignTop="@id/printButton"
+		android:layout_marginStart="8dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+</RelativeLayout>

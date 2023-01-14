@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<View
+		android:background="@android:color/black"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_width="match_parent"
+		android:layout_height="2dp" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_marginEnd="10sp"
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content">
+			<com.auditpro.mobile_client.controls.CustomTextView
+				android:id="@+id/last_audited_text"
+				style="@style/customText"
+				android:text="@string/begin_audit_last"
+				android:textSize="15sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<com.auditpro.mobile_client.controls.CustomTextView
+				android:id="@+id/email_text"
+				style="@style/customText"
+				android:text="auditor@auditcompany.com"
+				android:textSize="15sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+			<com.auditpro.mobile_client.controls.CustomTextView
+				android:id="@+id/audit_time_text"
+				style="@style/customText"
+				android:text="Audit Time: 13:13"
+				android:textSize="15sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+		</LinearLayout>
+		<com.auditpro.mobile_client.controls.CustomPercent
+			android:id="@+id/percent_text"
+			style="@style/customText"
+			android:text="75%"
+			android:textSize="10sp"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			tools:ignore="HardcodedText,SmallSp"/>
+	</LinearLayout>
+	<TextView
+		android:id="@+id/audit_note_text"
+		style="@style/customText"
+		android:text="7/04/18 - This is a long audit note to verify the wrap and height formatting"
+		android:textSize="12sp"
+		android:layout_marginTop="5dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:ignore="HardcodedText"/>
+	<TextView
+		android:id="@+id/audit_store_note_text"
+		style="@style/customText"
+		android:text="7/04/18 - This is a long store audit note to verify the wrap and height formatting"
+		android:textSize="12sp"
+		android:layout_marginTop="5dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:ignore="HardcodedText"/>
+</LinearLayout>

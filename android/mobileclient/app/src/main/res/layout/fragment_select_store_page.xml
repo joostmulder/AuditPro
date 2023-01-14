@@ -1,0 +1,86 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="20dp"
+	android:orientation="vertical"
+	tools:context="com.auditpro.mobile_client.pages.SelectStorePage">
+
+	<com.auditpro.mobile_client.controls.CustomButton
+		style="@style/customButton"
+		android:id="@+id/chainButton"
+		android:text="@string/button_stores_all_chains"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<!-- Filter -->
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<com.auditpro.mobile_client.controls.CustomEditText
+			style="@style/customEdit"
+			android:id="@+id/searchEdit"
+			android:inputType="text"
+			android:imeOptions="actionDone"
+			android:maxLines="1"
+			android:lines="1"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:hint="@string/hint_search_text" />
+		<ImageButton
+			android:id="@+id/searchButton"
+			android:src="@android:drawable/ic_search_category_default"
+			android:background="@android:color/transparent"
+			android:contentDescription="@string/message_prods_search_clear_descr"
+			android:scaleType="fitCenter"
+			android:layout_width="34dp"
+			android:layout_height="34dp" />
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/storeList"
+		android:layout_weight="1"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="0dp" />
+	<com.auditpro.mobile_client.controls.CustomTextView
+		style="@style/customText"
+		android:text="@string/message_stores_sort_by"
+		android:textSize="12sp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<com.auditpro.mobile_client.controls.CustomButton
+			style="@style/helpButton"
+			android:id="@+id/gpsButton"
+			android:text="@string/button_stores_gps"
+			android:layout_marginEnd="10dp"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content" />
+		<com.auditpro.mobile_client.controls.CustomButton
+			style="@style/helpButton"
+			android:id="@+id/lastStoreButton"
+			android:text="@string/button_stores_last_store"
+			android:layout_marginEnd="10dp"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content" />
+		<com.auditpro.mobile_client.controls.CustomButton
+			style="@style/helpButton"
+			android:id="@+id/nameButton"
+			android:text="@string/button_stores_name"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>
